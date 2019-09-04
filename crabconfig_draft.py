@@ -10,13 +10,13 @@ config.General.transferLogs = False
 config.section_("JobType")
 config.JobType.pluginName = 'PrivateMC'
 config.JobType.psetName = 'pythonLHEGEN_cfg.py'
-config.JobType.inputFiles = ['Z_ee_NNPDF31_13TeV_M_20.tgz']
+config.JobType.inputFiles = ['Z_slc6_amd64_gcc630_CMSSW_10_0_2_my_Z.tgz']
 config.JobType.disableAutomaticOutputCollection = False
 
 config.section_("Data")
 config.Data.outputPrimaryDataset = 'privateMCProductionLHEGENSIM'
 config.Data.splitting = 'EventBased'
-config.Data.unitsPerJob = 2000
+config.Data.unitsPerJob = 200
 config.Data.totalUnits = #NUMBEREVENTS#
 config.Data.publication = False
 config.Data.outputDatasetTag = 'eventLHEGEN-#BASENAME#-#REQUESTDATE#'
