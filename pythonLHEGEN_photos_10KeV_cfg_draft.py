@@ -153,7 +153,6 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
 
 
 process.externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
-    #args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/2017/13TeV/powheg/V2/DYToLL_NNPDF31_13TeV/Z_ee_NNPDF31_13TeV_M_50.tgz'),
     args = cms.vstring('#GRIDPACKLOCATION#'),
     nEvents = cms.untracked.uint32(#NUMBEREVENTS#),
     numberOfParameters = cms.uint32(1),
